@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Hackathon - Đề 003 - Phan Thuận Thành</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --badge-bg: #dbeafe;
+            --badge-text: #1e40af;
+            --success-bg: #dcfce7;
+            --success-text: #166534;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.65rem;
+            margin-bottom: 0.75rem;
+            word-wrap: break-word;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table th, .info-table td {
+            padding: 0.7rem 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .info-table th {
+            color: var(--text-muted);
+            font-weight: 500;
+            width: 40%;
+        }
+
+        .info-table td {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .info-table tr:last-child th, .info-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .intro-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .intro-box h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .intro-content {
+            color: #334155;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .update-box {
+            background-color: var(--success-bg);
+            color: var(--success-text);
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Xin chào đến với Ptit Rikkei DevOps Lab - Phan Thuận Thành - B24DTCN169 - K24CNTT2</h1>
+            <p class="tagline">Báo cáo triển khai bài thi DevOps Hackathon - Đề 003</p>
+        </header>
+
+        <div class="grid">
+
+            <div class="card">
+                <h2>Thông tin sinh viên</h2>
+                <table class="info-table">
+                    <tr>
+                        <th>Họ và tên:</th>
+                        <td>Phan Thuận Thành</td>
+                    </tr>
+                    <tr>
+                        <th>Mã sinh viên:</th>
+                        <td><span class="badge">B24DTCN169</span></td>
+                    </tr>
+                    <tr>
+                        <th>Lớp:</th>
+                        <td>K24CNTT2</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td>phanthuanthanh270606@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Tài khoản Linux:</th>
+                        <td><code>phanthuanthanh-k24cntt2</code></td>
+                    </tr>
+                    <tr>
+                        <th>GitHub:</th>
+                        <td><a href="https://github.com/phthuanthanh" target="_blank">phthuanthanh</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h2>Thông tin bài thi</h2>
+                <table class="info-table">
+                    <tr>
+                        <th>Đề số:</th>
+                        <td><span class="badge">003</span></td>
+                    </tr>
+                    <tr>
+                        <th>Chủ đề:</th>
+                        <td>Quản lý công việc (Task)</td>
+                    </tr>
+                    <tr>
+                        <th>Cổng Nginx:</th>
+                        <td><code>8083</code></td>
+                    </tr>
+                    <tr>
+                        <th>IP máy chủ:</th>
+                        <td><code>20.189.122.108</code></td>
+                    </tr>
+                    <tr>
+                        <th>Ngày thi:</th>
+                        <td>08/10/2026</td>
+                    </tr>
+                    <tr>
+                        <th>Repository:</th>
+                        <td><a href="https://github.com/phthuanthanh/devops-hackathon-de003-phanthuanthanh" target="_blank">devops-hackathon-de003-phanthuanthanh</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="intro-box">
+            <h2>Giới thiệu hệ thống "Quản lý công việc (Task)"</h2>
+            <div class="intro-content">
+                <p>
+                    Hệ thống Quản lý công việc (Task Management System) là nền tảng số hóa hỗ trợ cá nhân và nhóm làm việc theo dõi, tổ chức và tối ưu hóa tiến độ công việc hàng ngày một cách khoa học. Ứng dụng cung cấp các tính năng quản lý danh sách đầu việc, phân loại trạng thái thực hiện và theo dõi hạn hoàn thành trực quan. Đây là giải pháp đơn giản nhưng hiệu quả cao nhằm nâng cao năng suất làm việc và đảm bảo tính kỷ luật trong các dự án công nghệ thông tin.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Phan Thuận Thành - PTIT Rikkei DevOps Lab. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

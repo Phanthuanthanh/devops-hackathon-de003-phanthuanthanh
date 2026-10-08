@@ -1,0 +1,13 @@
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Local đề bài folder (if any)
+indexxx/
